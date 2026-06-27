@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: trading-signal-tracker
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/trading_signals
+    username: gurpreetsodi
+    password: 
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update        # fine for assignment scope; Flyway would replace this in prod
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  jackson:
+    time-zone: UTC
+
+server:
+  port: 8080
+
+binance:
+  base-url: https://api.binance.com
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api-docs
+
+logging:
+  level:
+    com.tradingsignal: DEBUG
