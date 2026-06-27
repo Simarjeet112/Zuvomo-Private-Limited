@@ -2,6 +2,10 @@
 
 A backend service for creating and tracking trading signals against live Binance prices. Built with Java 17, Spring Boot 3, Spring Data JPA, and PostgreSQL.
 
+**Video walkthrough:** https://youtu.be/L7OFymB88qM
+
+## Tech Stack
+
 ## Tech Stack
 
 - **Java 17**, **Spring Boot 3.3.4**
